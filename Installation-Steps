@@ -1,0 +1,98 @@
+Jenkins_Plugins Installations
+================================
+**General Plugins:**
+1. Eclipse Temurin Installer (Install without restart)
+2. SonarQube Scanner (Install without restart)
+3. NodeJS Plugin (Install without restart) – version 16.20.2
+4. OWASP Dependency-Check Plugins
+5. Stage View
+6. Blue Ocean
+7.Terraform
+
+
+**Docker-related Plugins:**
+1. Docker
+2. Docker Commons
+3. Docker Pipeline
+4. Docker API
+5. Docker-build-step
+
+Sonar password:admin@123
+
+sonar_token: squ_a5dc91cc4eceae2f5042ae6306d0af20856b9a77
+
+1.Jenkins==Manage-jenkins==system==AddSonarQube
+Name
+sonarURL
+sonar-token as secret text
+
+Configure Tools
+===============
+1.JDK Version ==17.0.9
+2.sonar scanner version 7.0.0
+3.Node Js version 17.9.0
+4.Dependency Check DC ==12.1.0
+
+Create pipeline job 
+================
+Gitrepo name
+branch
+Jenkins file path
+
+
+Creating-Sonar-Webhook
+==================
+Administration==Configurations==Webhooks===Jenkinsurl
+jenkinsURL: http://34.235.125.74:8080/sonarqube-webhook/
+
+Dependency-check
+================
+https://github.com/dependency-check/DependencyCheck?tab=readme-ov-file
+
+generate the API token
+ 6f763979-8271-4211-b421-f5fd40e85ec1   
+
+Dockerhub account details
+=================
+add dockerhub credentials in Jenkins credentials
+
+
+
+Gmail App password:
+===============
+hotstar
+gmail password: vwge rljm bxen ulmw 
+
+Configure SMTP
+============
+Manage jenkins==system==
+
+Here are the **configuration details** extracted from the image you uploaded:
+
+
+### 1. Basic Email Notification
+- SMTP Server: smtp.gmail.com
+- Email Suffix:`@gmail.com` (default user email domain)
+- SMTP Authentication: Enabled
+- Username: Your Gmail address
+- Password: Your Gmail password or App Password (for 2-factor authentication)
+- Use TLS: Checked
+- SMTP Port: 587
+- Reply-To Address: Your email address
+- Charset:`UTF-8`
+
+---
+
+### 2. Extended Email Notification
+- SMTP Server: smtp.gmail.com
+- SMTP Port:`587` (for TLS)
+-Add credentials: 
+gmail id
+app password
+id: smtp-gmail
+- Use TLS: Checked
+- Credentials:** Select from the credentials list
+
+---
+
+
