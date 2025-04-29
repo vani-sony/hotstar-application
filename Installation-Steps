@@ -4,7 +4,7 @@ Jenkins_Plugins Installations
 1. Eclipse Temurin Installer (Install without restart)
 2. SonarQube Scanner (Install without restart)
 3. NodeJS Plugin (Install without restart) – version 16.20.2
-4. OWASP Dependency-Check Plugins
+4. OWASP Dependency-Check 
 5. Stage View
 6. Blue Ocean
 7.Terraform
