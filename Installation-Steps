@@ -19,7 +19,7 @@ Jenkins_Plugins Installations
 
 Sonar password:admin@123
 
-sonar_token: squ_a5dc91cc4eceae2f5042ae6306d0af20856b9a77
+sonar_token: squ_a5dc91cc4eceae2f5042ae6306d0af2085
 
 1.Jenkins==Manage-jenkins==system==AddSonarQube
 Name
@@ -50,7 +50,7 @@ Dependency-check
 https://github.com/dependency-check/DependencyCheck?tab=readme-ov-file
 
 generate the API token
- 6f763979-8271-4211-b421-f5fd40e85ec1   
+ 6f763979-8271-4211-b421-f5fd40e8  
 
 Dockerhub account details
 =================
@@ -61,7 +61,7 @@ add dockerhub credentials in Jenkins credentials
 Gmail App password:
 ===============
 hotstar
-gmail password: vwge rljm bxen ulmw 
+gmail password: vwge rljm bxen xsdfg 
 
 Configure SMTP
 ============
