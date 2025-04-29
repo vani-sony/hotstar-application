@@ -17,9 +17,13 @@ Jenkins_Plugins Installations
 4. Docker API
 5. Docker-build-step
 
+ip:9000
+un: admin
+pw: admin
+
 Sonar password:admin@123
 
-sonar_token: squ_a5dc91cc4eceae2f5042ae6306d0af2085
+sonar_token: squ_372db54f0bd46f300637a519ab6e94de00680f41
 
 1.Jenkins==Manage-jenkins==system==AddSonarQube
 Name
