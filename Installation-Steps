@@ -23,7 +23,7 @@ pw: admin
 
 Sonar password:admin@123
 
-sonar_token: squ_372db54f0bd46f300637a519ab6e94de00680f41
+sonar_token: squ_905c0f43eb91022112fe723660594f8f5cb4f8ff
 
 1.Jenkins==Manage-jenkins==system==AddSonarQube
 Name
