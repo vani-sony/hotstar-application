@@ -54,20 +54,20 @@ pipeline{
                 script{
                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker'){   
                        sh "docker build -t hotstar ."
-                       sh "docker tag hotstar acecloudacademy/hotstar:latest "
-                       sh "docker push acecloudacademy/hotstar:latest "
+                       sh "docker tag hotstar admin1vani/hotstar:latest "
+                       sh "docker push admin1vani/hotstar:latest "
                     }
                 }
             }
         }
         stage("TRIVY"){
             steps{
-                sh "trivy image acecloudacademy/hotstar:latest > trivyimage.txt" 
+                sh "trivy image admin1vani/hotstar:latest > trivyimage.txt" 
             }
         }
         stage('Deploy to container'){
             steps{
-                sh 'docker run -d --name hotstar -p 3000:3000 acecloudacademy/hotstar:latest'
+                sh 'docker run -d --name hotstar -p 3000:3000 admin1vani/hotstar:latest'
             }
         }
 
@@ -88,9 +88,9 @@ pipeline{
                     <p>Started by: ${buildUser}</p>
                     <p>Build URL: <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>
                 """,
-                to: 'vijayakumarbl276@gmail.com',
-                from: 'vijayakumarbl276@gmail.com',
-                replyTo: 'vijayakumarbl276@gmail.com',
+                to: 'welearntogether4@gmail.com',
+                from: 'welearntogether4@gmail.com',
+                replyTo: 'welearntogether4@gmail.com',
                 mimeType: 'text/html',
                 attachmentsPattern: 'trivyfs.txt,trivyimage.txt'
             )
